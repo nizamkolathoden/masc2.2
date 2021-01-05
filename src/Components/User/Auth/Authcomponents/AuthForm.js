@@ -1,8 +1,12 @@
-import React from "react";
+import React,{useContext} from "react";
 import { useFormik } from "formik";
+import {useHistory} from 'react-router-dom'
 import classes from "../../../../App.module.css";
+import {userContext} from '../User'
 
 const AuthForm = () => {
+  const  {dispatch} = useContext(userContext)
+  const History = useHistory()
   const formik = useFormik({
     initialValues: {
       admissionNumber: "",
@@ -42,7 +46,8 @@ const AuthForm = () => {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        admno: formik.values.admissionNumber
+        admno: formik.values.admissionNumber,
+        name:formik.values.name
       })
     }).then(res => res.json()).then(data => {
       console.log(data)
@@ -54,8 +59,8 @@ const AuthForm = () => {
         localStorage.setItem("Token_majlis", JSON.stringify(data.token))
         //localstorge user user_majlis
         localStorage.setItem("user_majlis", JSON.stringify(data.user))
-        /* dispatch({type:'USER',payload:data.user})
-        history.push('/user') */
+         dispatch({type:'USER',payload:data.user})
+        History.push('/') 
       }
 
     }

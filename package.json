@@ -9,11 +9,16 @@
     "@testing-library/user-event": "^12.6.0",
     "formik": "^2.2.6",
     "gsap": "^3.5.1",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-slick": "^0.27.13",
     "sal.js": "^0.8.2",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^6.4.5",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

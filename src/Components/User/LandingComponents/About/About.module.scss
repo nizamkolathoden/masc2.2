@@ -1,0 +1,72 @@
+.About {
+    height: 100vh;
+    background: url("../../../../Asset/pexels-jakub-novacek-924824-01\ \(1\).jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: .1fr 1fr;
+    
+  }
+  .AboutContent{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+flex-direction: column;
+      .Aboutcard{
+        height: 20em;
+        width: 18em;
+        background: #ffffff;
+        color: #393e46;
+        border-radius: 0.6em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .aboutMasc{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .MascOff{
+              font-weight: 500; 
+              font-size: 1em;
+            }
+            .AboutMascLogo{
+              width: 235px;
+               height: 150px;
+            }
+            .AboutText{
+              font-weight: 500;
+              font-size: 1em;
+               text-align: center; 
+               width: 85%;
+               .spanAb{
+                font-weight: 500; 
+                font-size: .7em;
+               }
+            }
+        }
+      }
+  }
+  @media only screen and(min-width: 1020px) {
+    .AboutContent{
+      .Aboutcard{
+        height: 20em;
+        width: 40em;
+        .aboutMasc{
+          .MascOff{
+            font-size: 1.2em;
+          }
+          .AboutText{
+            font-size: 1.5em;
+            .spanAb{
+              font-size: .9em;
+            }
+          }
+        }
+      }
+    }
+ 
+  }

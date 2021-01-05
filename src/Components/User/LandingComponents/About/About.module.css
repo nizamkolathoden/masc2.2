@@ -1,0 +1,104 @@
+.About {
+  height: 100vh;
+  background: url("../../../../Asset/pexels-jakub-novacek-924824-01 (1).jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: .1fr 1fr;
+      grid-template-rows: .1fr 1fr;
+}
+
+.AboutContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.AboutContent .Aboutcard {
+  height: 20em;
+  width: 18em;
+  background: #ffffff;
+  color: #393e46;
+  border-radius: 0.6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.AboutContent .Aboutcard .aboutMasc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.AboutContent .Aboutcard .aboutMasc .MascOff {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.AboutContent .Aboutcard .aboutMasc .AboutMascLogo {
+  width: 235px;
+  height: 150px;
+}
+
+.AboutContent .Aboutcard .aboutMasc .AboutText {
+  font-weight: 500;
+  font-size: 1em;
+  text-align: center;
+  width: 85%;
+}
+
+.AboutContent .Aboutcard .aboutMasc .AboutText .spanAb {
+  font-weight: 500;
+  font-size: .7em;
+}
+
+@media only screen and (min-width: 1020px) {
+  .AboutContent .Aboutcard {
+    height: 20em;
+    width: 40em;
+  }
+  .AboutContent .Aboutcard .aboutMasc .MascOff {
+    font-size: 1.2em;
+  }
+  .AboutContent .Aboutcard .aboutMasc .AboutText {
+    font-size: 1.5em;
+  }
+  .AboutContent .Aboutcard .aboutMasc .AboutText .spanAb {
+    font-size: .9em;
+  }
+}
+/*# sourceMappingURL=About.module.css.map */

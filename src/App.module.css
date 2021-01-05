@@ -11,7 +11,7 @@
   -webkit-appearance: none;
 }
 
-* input[type=number] {
+* input[type="number"] {
   -moz-appearance: textfield;
   scroll-behavior: smooth;
 }
@@ -188,6 +188,144 @@
   font-size: 0.9em;
 }
 
+.Landing {
+  height: 100vh;
+  width: 100vw;
+  background: url("./Asset/pexels-jakub-novacek-924824-01 (1).jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.1fr 1fr;
+      grid-template-rows: 0.1fr 1fr;
+}
+
+.LandingHeader {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  color: #ffffff;
+}
+
+.LandingHeader .Landing_Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.LandingHeader .Landing_Header .Landing_Header_Head {
+  font-size: larger;
+  font-weight: 500;
+}
+
+.LandingHeader .LandingNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.LandingHeader .LandingNav .Landing_Ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.LandingHeader .LandingNav .Landing_Ul .Landing_link {
+  margin-left: 1.5em;
+}
+
+.LandingContent {
+  justify-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.5fr 1fr;
+      grid-template-rows: 0.5fr 1fr;
+  color: #ffffff;
+}
+
+.LandingContent .Landing_FbDisc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.LandingContent .Landing_FbHead {
+  font-weight: 500;
+}
+
+.LandingContent .Landing_Fbtext {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.LandingContent .LC_Card {
+  height: 20em;
+  width: 18em;
+  background: #ffffff;
+  color: #393e46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 0.6em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.LandingContent .LC_Card .TcF {
+  font-weight: 500;
+}
+
+.LandingContent .LC_Card .TcP {
+  font-size: 0.9em;
+  text-align: center;
+  width: 70%;
+}
+
+.LandingContent .LC_Card .TcB {
+  padding: 0.9em 3em;
+  border-radius: 0.6em;
+  outline: none;
+  border: none;
+  background: #393e46;
+  color: #f3f3f3;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 1020px) {
   .Log {
     -ms-grid-rows: none;
@@ -229,6 +367,34 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .LandingHeader .Landing_Header .Landing_Header_Head {
+    font-size: xx-large;
+    font-weight: 500;
+  }
+  .LandingHeader .LandingNav .Landing_Ul .Landing_link {
+    font-size: x-large;
+    font-weight: 400;
+  }
+  .LandingContent .Landing_FbDisc .Landing_FbHead {
+    font-size: 2.5em;
+  }
+  .LandingContent .Landing_FbDisc .Landing_Fbtext {
+    font-size: 1rem;
+    width: 50%;
+  }
+  .LandingContent .LC_Card {
+    height: 20em;
+    width: 40em;
+  }
+  .LandingContent .LC_Card .TcF {
+    font-size: 1.9rem;
+  }
+  .LandingContent .LC_Card .TcP {
+    font-size: 1rem;
+  }
+  .LandingContent .LC_Card .TcB {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (min-width: 1800px) {
@@ -237,6 +403,18 @@
   }
   .Bg_container .Bg .Bg_text {
     font-size: 1.5em;
+  }
+  .LandingHeader .LandingNav .Landing_Ul .Landing_link {
+    margin-left: 5em;
+  }
+  .LandingContent .Landing_FbDisc .Landing_Fbtext {
+    font-size: 1.2rem;
+  }
+  .LandingContent .LC_Card .TcF {
+    font-size: 1.5rem;
+  }
+  .LandingContent .LC_Card .TcP {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=App.module.css.map */

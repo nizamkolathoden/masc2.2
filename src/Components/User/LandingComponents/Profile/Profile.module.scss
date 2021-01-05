@@ -1,0 +1,74 @@
+.profile {
+  height: 100vh;
+  background: url("../../../../Asset/pexels-jakub-novacek-924824-01\ \(1\).jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 0.15fr 1fr 0.5fr;
+}
+.ProfileContent {
+  padding-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .Profilecard {
+    height: 20em;
+    width: 18em;
+    background: #ffffff;
+    color: #393e46;
+    border-radius: 0.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .Profiledetails {
+      list-style: none;
+      li {
+        padding: 1em;
+        font-weight: bold;
+        label {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+.Status {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  .InternalMark {
+    height: 8em;
+    width: 9em;
+    background: #0b188b;
+    color: #393e46;
+    border-radius: 0.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .Test {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .Attendencek {
+    height: 8em;
+    width: 9em;
+    background: #ff6f6f;
+    color: #393e46;
+    border-radius: 0.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .Analytics {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
